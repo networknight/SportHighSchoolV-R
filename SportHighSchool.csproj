@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{892600D9-5D03-414A-AD10-41966D48C9D5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SportHighSchool</RootNamespace>
+    <AssemblyName>SportHighSchool</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmAssessments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAssessments.Designer.cs">
+      <DependentUpon>FrmAssessments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmClasses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmClasses.Designer.cs">
+      <DependentUpon>FrmClasses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmParentsReferences.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmParentsReferences.Designer.cs">
+      <DependentUpon>FrmParentsReferences.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPresences.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPresences.Designer.cs">
+      <DependentUpon>FrmPresences.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSafetyReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSafetyReports.Designer.cs">
+      <DependentUpon>FrmSafetyReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSchools.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSchools.Designer.cs">
+      <DependentUpon>FrmSchools.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSportEquipments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSportEquipments.Designer.cs">
+      <DependentUpon>FrmSportEquipments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSportEvents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSportEvents.Designer.cs">
+      <DependentUpon>FrmSportEvents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStudents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStudents.Designer.cs">
+      <DependentUpon>FrmStudents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWeeklyPhysicalEducationPrograms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWeeklyPhysicalEducationPrograms.Designer.cs">
+      <DependentUpon>FrmWeeklyPhysicalEducationPrograms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAssessments.resx">
+      <DependentUpon>FrmAssessments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmClasses.resx">
+      <DependentUpon>FrmClasses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmParentsReferences.resx">
+      <DependentUpon>FrmParentsReferences.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPresences.resx">
+      <DependentUpon>FrmPresences.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSafetyReports.resx">
+      <DependentUpon>FrmSafetyReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSchools.resx">
+      <DependentUpon>FrmSchools.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSportEquipments.resx">
+      <DependentUpon>FrmSportEquipments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSportEvents.resx">
+      <DependentUpon>FrmSportEvents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStudents.resx">
+      <DependentUpon>FrmStudents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWeeklyPhysicalEducationPrograms.resx">
+      <DependentUpon>FrmWeeklyPhysicalEducationPrograms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\School.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Classes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Presences.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SafetyReports.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SportEvents.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Assessments.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ParentsReferences.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Students.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WeeklyPhysicalEducationPrograms.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SportEquipments.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
