@@ -15,7 +15,7 @@ namespace SportHighSchool
             Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("fa-IR");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmMain());
+            Application.Run(new UsageLicense());
         }
     }
 }

@@ -56,7 +56,7 @@
             this.LbClass.Location = new System.Drawing.Point(328, 107);
             this.LbClass.Name = "LbClass";
             this.LbClass.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.LbClass.Size = new System.Drawing.Size(94, 13);
+            this.LbClass.Size = new System.Drawing.Size(119, 17);
             this.LbClass.TabIndex = 12;
             this.LbClass.Text = "عنوان کلاس درس :";
             // 
@@ -66,7 +66,7 @@
             this.LbClassID.Location = new System.Drawing.Point(804, 54);
             this.LbClassID.Name = "LbClassID";
             this.LbClassID.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.LbClassID.Size = new System.Drawing.Size(49, 13);
+            this.LbClassID.Size = new System.Drawing.Size(62, 17);
             this.LbClassID.TabIndex = 9;
             this.LbClassID.Text = "شناسه :";
             // 
@@ -76,7 +76,7 @@
             this.txtClassID.Location = new System.Drawing.Point(655, 74);
             this.txtClassID.MaxLength = 50;
             this.txtClassID.Name = "txtClassID";
-            this.txtClassID.Size = new System.Drawing.Size(200, 21);
+            this.txtClassID.Size = new System.Drawing.Size(200, 24);
             this.txtClassID.TabIndex = 8;
             this.txtClassID.Text = "0";
             this.txtClassID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -87,7 +87,7 @@
             this.txtClass.MaxLength = 50;
             this.txtClass.Name = "txtClass";
             this.txtClass.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtClass.Size = new System.Drawing.Size(200, 21);
+            this.txtClass.Size = new System.Drawing.Size(200, 24);
             this.txtClass.TabIndex = 2;
             // 
             // BtnNew
@@ -164,6 +164,7 @@
             this.GroupItem.Size = new System.Drawing.Size(865, 172);
             this.GroupItem.TabIndex = 0;
             this.GroupItem.TabStop = false;
+            this.GroupItem.Enter += new System.EventHandler(this.GroupItem_Enter);
             // 
             // LbEducationalYear
             // 
@@ -171,7 +172,7 @@
             this.LbEducationalYear.Location = new System.Drawing.Point(131, 107);
             this.LbEducationalYear.Name = "LbEducationalYear";
             this.LbEducationalYear.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.LbEducationalYear.Size = new System.Drawing.Size(76, 13);
+            this.LbEducationalYear.Size = new System.Drawing.Size(97, 17);
             this.LbEducationalYear.TabIndex = 13;
             this.LbEducationalYear.Text = "سال تحصیلی :";
             // 
@@ -181,7 +182,7 @@
             this.txtEducationalYear.MaxLength = 50;
             this.txtEducationalYear.Name = "txtEducationalYear";
             this.txtEducationalYear.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtEducationalYear.Size = new System.Drawing.Size(200, 21);
+            this.txtEducationalYear.Size = new System.Drawing.Size(200, 24);
             this.txtEducationalYear.TabIndex = 3;
             // 
             // ComEducationalBaseID
@@ -192,7 +193,7 @@
             this.ComEducationalBaseID.Location = new System.Drawing.Point(440, 125);
             this.ComEducationalBaseID.Name = "ComEducationalBaseID";
             this.ComEducationalBaseID.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.ComEducationalBaseID.Size = new System.Drawing.Size(200, 21);
+            this.ComEducationalBaseID.Size = new System.Drawing.Size(200, 25);
             this.ComEducationalBaseID.TabIndex = 1;
             this.ComEducationalBaseID.ValueMember = "EducationalBaseID";
             // 
@@ -202,7 +203,7 @@
             this.LbEducationalBaseID.Location = new System.Drawing.Point(565, 107);
             this.LbEducationalBaseID.Name = "LbEducationalBaseID";
             this.LbEducationalBaseID.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.LbEducationalBaseID.Size = new System.Drawing.Size(72, 13);
+            this.LbEducationalBaseID.Size = new System.Drawing.Size(90, 17);
             this.LbEducationalBaseID.TabIndex = 11;
             this.LbEducationalBaseID.Text = "پایه آموزشی :";
             // 
@@ -214,7 +215,7 @@
             this.ComSchoolID.Location = new System.Drawing.Point(655, 125);
             this.ComSchoolID.Name = "ComSchoolID";
             this.ComSchoolID.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.ComSchoolID.Size = new System.Drawing.Size(200, 21);
+            this.ComSchoolID.Size = new System.Drawing.Size(200, 25);
             this.ComSchoolID.TabIndex = 0;
             this.ComSchoolID.ValueMember = "SchoolID";
             // 
@@ -224,7 +225,7 @@
             this.LbSchoolID.Location = new System.Drawing.Point(796, 107);
             this.LbSchoolID.Name = "LbSchoolID";
             this.LbSchoolID.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.LbSchoolID.Size = new System.Drawing.Size(57, 13);
+            this.LbSchoolID.Size = new System.Drawing.Size(70, 17);
             this.LbSchoolID.TabIndex = 10;
             this.LbSchoolID.Text = "آموزشگاه :";
             // 
@@ -244,7 +245,7 @@
             this.txtSearch.MaxLength = 50;
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtSearch.Size = new System.Drawing.Size(200, 21);
+            this.txtSearch.Size = new System.Drawing.Size(200, 24);
             this.txtSearch.TabIndex = 1;
             // 
             // DgvList
@@ -258,7 +259,7 @@
             this.DgvList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.DgvList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvList.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.DgvList.Location = new System.Drawing.Point(0, 220);
+            this.DgvList.Location = new System.Drawing.Point(0, 212);
             this.DgvList.MultiSelect = false;
             this.DgvList.Name = "DgvList";
             this.DgvList.ReadOnly = true;
@@ -266,14 +267,14 @@
             this.DgvList.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.DgvList.RowHeadersVisible = false;
             this.DgvList.RowHeadersWidth = 50;
-            this.DgvList.Size = new System.Drawing.Size(874, 366);
+            this.DgvList.Size = new System.Drawing.Size(872, 366);
             this.DgvList.TabIndex = 3;
             this.DgvList.DoubleClick += new System.EventHandler(this.DgvList_DoubleClick);
             // 
             // FrmClasses
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(874, 586);
+            this.ClientSize = new System.Drawing.Size(872, 578);
             this.ControlBox = false;
             this.Controls.Add(this.GroupItem);
             this.Controls.Add(this.BtnSearch);

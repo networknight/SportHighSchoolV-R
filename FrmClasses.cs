@@ -196,5 +196,10 @@ namespace SportHighSchool
         {
             this.Close();
         }
+
+        private void GroupItem_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
